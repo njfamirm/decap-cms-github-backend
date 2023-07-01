@@ -1,23 +1,27 @@
-import {IncomingMessage, ServerResponse} from 'http';
 import {AuthorizationCode} from 'simple-oauth2';
 import {config} from '../config.js';
+import {nanoServer} from '../lib/nano-server.js'
 
-export default async (req: IncomingMessage, res: ServerResponse) => {
-  const {host} = req.headers;
-  const url = new URL(`https://${host}/${req.url}`);
-  const code = url.searchParams.get('code');
+nanoServer.route('GET', '/callback', async (connection) => {
+  const host = connection.incomingMessage.headers.host;
+  const url = new URL(`https://${host}/${connection.url}`);
   const provider = url.searchParams.get('provider');
+  const code = url.searchParams.get('code');
 
   if (provider !== 'github') {
-    res.statusCode = 400;
-    res.end(renderBody('error'));
-    // res.end('invalid provider');
+    return {
+      ok: false,
+      statusCode: 400,
+      errorCode: 'invalid_provider',
+    };
   }
 
   if (!code) {
-    res.statusCode = 400;
-    res.end(renderBody('error'));
-    return;
+    return {
+      ok: false,
+      statusCode: 400,
+      errorCode: 'require_code',
+    };
   }
 
   const client = new AuthorizationCode(config);
@@ -29,11 +33,13 @@ export default async (req: IncomingMessage, res: ServerResponse) => {
   const accessToken = await client.getToken(tokenParams);
   const token = accessToken.token['access_token'] as string;
 
-  const responseBody = renderBody('success', token);
+  connection.serverResponse.end(renderBody('success', token))
 
-  res.statusCode = 200;
-  res.end(responseBody);
-};
+  return {
+    ok: true,
+    data: {},
+  };
+});
 
 function renderBody(status: string, token?: string) {
   return `
