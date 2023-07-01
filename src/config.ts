@@ -1,3 +1,5 @@
+import { createLogger } from "@alwatr/logger";
+
 const clientId = process.env.OAUTH_GITHUB_CLIENT_ID
 const clientSecret = process.env.OAUTH_GITHUB_CLIENT_SECRET
 
@@ -23,3 +25,7 @@ export const config = {
     port: process.env.PORT != null ? +process.env.PORT : 8000,
   },
 };
+
+export const logger = createLogger('decap-cms-backend')
+
+logger.logProperty?.('config', config)

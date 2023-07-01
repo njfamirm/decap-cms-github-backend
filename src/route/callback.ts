@@ -1,5 +1,5 @@
 import {AuthorizationCode} from 'simple-oauth2';
-import {config} from '../config.js';
+import {config, logger} from '../config.js';
 import {nanoServer} from '../lib/nano-server.js'
 
 nanoServer.route('GET', '/callback', async (connection) => {
@@ -7,6 +7,7 @@ nanoServer.route('GET', '/callback', async (connection) => {
   const url = new URL(`https://${host}/${connection.url}`);
   const provider = url.searchParams.get('provider');
   const code = url.searchParams.get('code');
+  logger.logMethodArgs?.('get-callback', {host, url, provider})
 
   if (provider !== 'github') {
     return {
