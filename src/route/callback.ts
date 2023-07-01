@@ -25,7 +25,7 @@ nanoServer.route('GET', '/callback', async (connection) => {
     };
   }
 
-  const client = new AuthorizationCode(config);
+  const client = new AuthorizationCode({auth: config.auth, client: config.client});
   const tokenParams = {
     code,
     redirect_uri: `https://${host}/callback?provider=${provider}`,
