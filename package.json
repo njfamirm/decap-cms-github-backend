@@ -1,6 +1,9 @@
 {
   "name": "@adrianub/cms",
   "author": "Adrián UB",
+  "contributors": [
+    "S. Amir Mohammad Najafi <njfamirm@gamil.com> (njfamirm.ir"
+  ],
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
