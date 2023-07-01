@@ -13,8 +13,8 @@ nanoServer.route('GET', '/auth', (connection) => {
   if (provider !== 'github') {
     return {
       ok: false,
-      errorCode: 'invalid_provider',
       statusCode: 400,
+      errorCode: 'invalid_provider',
     };
   }
 
@@ -29,9 +29,10 @@ nanoServer.route('GET', '/auth', (connection) => {
     state: randomString(),
   });
 
-  connection.serverResponse.writeHead(301, { Location: authorizationUri });
+  connection.serverResponse.setHeader('Location', authorizationUri);
   return {
     ok: true,
+    statusCode: 301,
     data: {},
   };
 });
