@@ -4,7 +4,6 @@ version: 2
 updates:
   - package-ecosystem: github-actions
     directory: /
-    open-pull-requests-limit: 20
     commit-message:
       prefix: deps
       include: scope
@@ -22,7 +21,6 @@ updates:
   - package-ecosystem: npm
     directory: /
     versioning-strategy: increase
-    open-pull-requests-limit: 20
     commit-message:
       prefix: deps
       include: scope
