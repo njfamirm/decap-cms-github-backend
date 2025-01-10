@@ -28,7 +28,7 @@
     "watch:es": "yarn build:es --watch"
   },
   "dependencies": {
-    "@alwatr/logger": "^1.0.1",
+    "@alwatr/logger": "^5.0.0",
     "@alwatr/nano-server": "^1.2.7",
     "simple-oauth2": "~5.1.0",
     "tslib": "^2.8.1"
