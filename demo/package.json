@@ -24,6 +24,7 @@
     "release": "standard-version --sign"
   },
   "dependencies": {
+    "netlify-cms-app": "^2.15.72"
   },
   "devDependencies": {
     "@types/node": "^22.10.5",
