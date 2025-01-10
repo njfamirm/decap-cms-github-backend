@@ -1,0 +1,52 @@
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    open-pull-requests-limit: 20
+    commit-message:
+      prefix: deps
+      include: scope
+    reviewers:
+      - njfamirm
+    schedule:
+      interval: monthly
+      time: '10:30'
+      day: thursday
+    labels:
+      - ci
+      - priority-low
+      - maintenance
+
+  - package-ecosystem: npm
+    directory: /
+    versioning-strategy: increase
+    open-pull-requests-limit: 20
+    commit-message:
+      prefix: deps
+      include: scope
+    reviewers:
+      - njfamirm
+    schedule:
+      interval: monthly
+      time: '10:30'
+      day: thursday
+    labels:
+      - dependencies
+      - ci
+      - priority-low
+      - maintenance
+
+  - package-ecosystem: docker
+    directory: /
+    reviewers:
+      - njfamirm
+    schedule:
+      interval: monthly
+      time: '10:30'
+      day: thursday
+    labels:
+      - ci
+      - priority-low
+      - maintenance
