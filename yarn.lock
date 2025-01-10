@@ -187,15 +187,10 @@
   resolved "https://registry.npmjs.org/@hapi/bourne/-/bourne-3.0.0.tgz"
   integrity sha512-Waj1cwPXJDucOib4a3bAISsKJVb15MKi9IvmTI/7ssVEm6sywXGjVJDhl6/umt1pK1ZS7PacXU3A1PmFKHEZ2w==
 
-"@hapi/hoek@^10.0.1":
-  version "10.0.1"
-  resolved "https://registry.npmjs.org/@hapi/hoek/-/hoek-10.0.1.tgz"
-  integrity sha512-CvlW7jmOhWzuqOqiJQ3rQVLMcREh0eel4IBnxDx2FAcK8g7qoJRQK4L1CPBASoCY6y8e6zuCy3f2g+HWdkzcMw==
-
-"@hapi/hoek@^11.0.2":
-  version "11.0.2"
-  resolved "https://registry.npmjs.org/@hapi/hoek/-/hoek-11.0.2.tgz"
-  integrity sha512-aKmlCO57XFZ26wso4rJsW4oTUnrgTFw2jh3io7CAtO9w4UltBNwRXvXIVzzyfkaaLRo3nluP/19msA8vDUUuKw==
+"@hapi/hoek@^11.0.2", "@hapi/hoek@^11.0.4":
+  version "11.0.7"
+  resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-11.0.7.tgz#56a920793e0a42d10e530da9a64cc0d3919c4002"
+  integrity sha512-HV5undWkKzcB4RZUusqOpcgxOaq6VOAH7zhhIr2g3G8NF/MlFO75SjOr2NfuSx0Mh40+1FqCkagKLJRykUWoFQ==
 
 "@hapi/hoek@^9.0.0":
   version "9.3.0"
@@ -242,10 +237,10 @@
   dependencies:
     undici-types "~6.20.0"
 
-"@types/simple-oauth2@^5.0.2":
-  version "5.0.2"
-  resolved "https://registry.npmjs.org/@types/simple-oauth2/-/simple-oauth2-5.0.2.tgz"
-  integrity sha512-GoqbWy5SmiwGfBfASHcuzHqkBz/fzr0iPrlO41MqQfpGzjLzaqQDkjgghC4YgK1+SGX3pPx24urnlw89xqJ/eA==
+"@types/simple-oauth2@^5.0.7":
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/@types/simple-oauth2/-/simple-oauth2-5.0.7.tgz#92df8c2fba8ec58c9fea6dd3206d4395de19e721"
+  integrity sha512-8JbWVJbiTSBQP/7eiyGKyXWAqp3dKQZpaA+pdW16FCi32ujkzRMG8JfjoAzdWt6W8U591ZNdHcPtP2D7ILTKuA==
 
 ansi-styles@^3.2.1:
   version "3.2.1"
@@ -867,12 +862,12 @@ side-channel@^1.0.4:
     get-intrinsic "^1.0.2"
     object-inspect "^1.9.0"
 
-simple-oauth2@~5.0.0:
-  version "5.0.0"
-  resolved "https://registry.npmjs.org/simple-oauth2/-/simple-oauth2-5.0.0.tgz"
-  integrity sha512-8291lo/z5ZdpmiOFzOs1kF3cxn22bMj5FFH+DNUppLJrpoIlM1QnFiE7KpshHu3J3i21TVcx4yW+gXYjdCKDLQ==
+simple-oauth2@~5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/simple-oauth2/-/simple-oauth2-5.1.0.tgz#1398fe2b8f4b4066298d63c155501b31b42238f2"
+  integrity sha512-gWDa38Ccm4MwlG5U7AlcJxPv3lvr80dU7ARJWrGdgvOKyzSj1gr3GBPN1rABTedAYvC/LsGYoFuFxwDBPtGEbw==
   dependencies:
-    "@hapi/hoek" "^10.0.1"
+    "@hapi/hoek" "^11.0.4"
     "@hapi/wreck" "^18.0.0"
     debug "^4.3.4"
     joi "^17.6.4"
