@@ -26,7 +26,7 @@ nanoServer.route('GET', '/auth', (connection) => {
 
   const authorizationUri = client.authorizeURL({
     redirect_uri: `https://${host}/callback?provider=${provider}`,
-    scope: 'repo,user',
+    scope: config.scope,
     state: randomString(),
   });
 

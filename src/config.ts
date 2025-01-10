@@ -2,6 +2,7 @@ import { createLogger } from "@alwatr/logger";
 
 const clientId = process.env.OAUTH_GITHUB_CLIENT_ID
 const clientSecret = process.env.OAUTH_GITHUB_CLIENT_SECRET
+const scope = process.env.OAUTH_GITHUB_SCOPE
 
 if (clientId == undefined) {
   throw new Error('github client id required, OAUTH_GITHUB_CLIENT_ID="123_123_123" yarn start');
@@ -15,6 +16,7 @@ export const config = {
     id: clientId as string,
     secret: clientSecret as string,
   },
+  scope: scope || 'repo',
   auth: {
     tokenHost: 'https://github.com',
     tokenPath: '/login/oauth/access_token',
