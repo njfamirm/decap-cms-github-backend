@@ -8,7 +8,7 @@ ENV NODE_ENV production
 
 # Install dependencies
 COPY package.json *.lock ./
-RUN yarn install --frozen-lockfile --non-interactive --production false; \
+RUN yarn install --frozen-lockfile --non-interactive --production false
 
 COPY . .
 
