@@ -10,27 +10,45 @@
     "@alwatr/type" "^1.0.1"
     tslib "^2.5.3"
 
-"@alwatr/math@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@alwatr/math/-/math-1.0.1.tgz#a82dddd8de84d3a4dc685487afdead0952841266"
-  integrity sha512-AkjhHzuTvw7VQoJO4AGO6Iu93aSAeM/k0TaWytdiB64SnBjM0PkOzPkDHcsNL4mBXBzqALItVrV2843H3iKsYg==
-  dependencies:
-    "@alwatr/logger" "^1.0.1"
-    tslib "^2.5.3"
+"@alwatr/logger@^2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@alwatr/logger/-/logger-2.4.1.tgz#a7b666a42e0e68b2e12660fdb784e6f30a15ff03"
+  integrity sha512-4XDAXnaHIPNE7pAMbHJqFxuObtmKWRmC9FTeQhmUWw9bgkPQsYlcCaHNHyRLXJSD66L5CNEIWBNMxty3ETnNhw==
 
-"@alwatr/nano-server@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@alwatr/nano-server/-/nano-server-1.0.1.tgz#6e73d4219d1135497f3477d86c043a164d4b6f50"
-  integrity sha512-eKxfZY/KQ00HCyGATIXrXi7+qMwa9VWabcOcq0oCsmY5hXtHT3q7tplc2eAt40FI4i1W3DtCRb+1z6XUjNBeeg==
+"@alwatr/math@^1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@alwatr/math/-/math-1.3.1.tgz#53d32f761ce66f86038a805563aeaecbfe87c059"
+  integrity sha512-fmbxO0BLFyWvMmcbnMYXHLn0G5AmLYHvvbQJP+z/whqXWkor+QcKwPwhwudked0+sidLJmr0k6We3h1oW77W3w==
   dependencies:
-    "@alwatr/logger" "^1.0.1"
-    "@alwatr/math" "^1.0.1"
-    tslib "^2.5.3"
+    "@alwatr/logger" "^2.4.1"
+
+"@alwatr/nano-server@^1.2.7":
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/@alwatr/nano-server/-/nano-server-1.2.7.tgz#cec06c8c32b90ec526144be152ad9e372f6b9c79"
+  integrity sha512-0/9FIxYFits64iNoMXSoIPzCVXGysuA7exCJs6rrZsyrLW4vFN1PkrXxz/YdCafum0vOT9ST1KuQ3/hTxDRf9g==
+  dependencies:
+    "@alwatr/logger" "^2.4.1"
+    "@alwatr/math" "^1.3.1"
+    "@alwatr/util" "^1.4.1"
 
 "@alwatr/type@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@alwatr/type/-/type-1.0.1.tgz#b1540dad17a39a51ac44234e628a546dfa5ccb5e"
   integrity sha512-rpJ2aztBv8F3U9sjtHvEbvdNoubS/e1zm5Wsx6ztEc4YBrGDe4gJaAUiFW8RmKT0fdc8DCzxNO9YchXH5JZlcQ==
+
+"@alwatr/type@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@alwatr/type/-/type-1.2.4.tgz#2cd7216cdf05c45515ee327c36948bd94c58bd8e"
+  integrity sha512-ebWhEASx2kaIGs/g8NontsXJ+4GeM62B1LtGlEIdP1M+2mrNJcJVRLHUEA5hglSWyMJBtcL4bXV7JGZsvhhUPw==
+
+"@alwatr/util@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@alwatr/util/-/util-1.4.1.tgz#974d9ee258a4c0df42fb46e94ba8d2cbc199fc6f"
+  integrity sha512-0cH7BW0ywip8St6tSl5n8LysqNdGvvLzHYzuRRjMn3rOOUr5a2yn/uipga1MqvLp5fkVmx1gpi1Fa5KYCgDCCw==
+  dependencies:
+    "@alwatr/logger" "^2.4.1"
+    "@alwatr/math" "^1.3.1"
+    "@alwatr/type" "^1.2.4"
 
 "@esbuild/aix-ppc64@0.24.2":
   version "0.24.2"
