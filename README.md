@@ -1,6 +1,6 @@
 # Decap CMS Github backend
 
-OAuth service as Github backend for Decap CMS.
+OAuth service as Github backend for Decap CMS inspired by [netlify-cms-oauth](https://github.com/ublabs/netlify-cms-oauth)
 
 ## Usage
 
