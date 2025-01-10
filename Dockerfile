@@ -1,4 +1,4 @@
-ARG NODE_IMAGE=docker.io/library/node:20-alpine
+ARG NODE_IMAGE=docker.io/library/node:22-alpine
 
 FROM $NODE_IMAGE as builder
 
