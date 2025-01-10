@@ -8,10 +8,7 @@ on:
   push:
     tags:
       - 'v*.*.*'
-    branches:
-      - next
-      - main
-
+      
   pull_request:
     paths:
       - '.github/workflows/publish-container.yml'
