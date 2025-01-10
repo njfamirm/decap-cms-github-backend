@@ -2,7 +2,7 @@
   "name": "@njfamirm/decap-cms-github-backend",
   "author": "S. Amir Mohammad Najafi <njfamirm@gamil.com> (https://www.njfamirm.ir)",
   "description": "Self-hosted decap cms github backend.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "private": true,
   "type": "module",
