@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/njfamirm/decap-cms-github-backend/compare/v1.1.0...v1.1.1) (2025-01-10)
+
+
+### Bug Fixes
+
+* install correct deps ([9d98ecc](https://github.com/njfamirm/decap-cms-github-backend/commit/9d98ecce5fdc2b49167c68e9e64e537e1ebe94df))
+
 ## [1.1.0](https://github.com/njfamirm/decap-cms-github-backend/compare/v1.0.0...v1.1.0) (2025-01-10)
 
 
