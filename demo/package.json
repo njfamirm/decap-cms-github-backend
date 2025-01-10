@@ -1,0 +1,34 @@
+{
+  "name": "@njfamirm/decap-cms-github-backend-demo",
+  "author": "S. Amir Mohammad Najafi <njfamirm@gamil.com> (https://www.njfamirm.ir)",
+  "description": "Demo of self-hosted decap cms github backend.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "b": "yarn build",
+    "s": "yarn start",
+    "start": "NODE_OPTIONS=--enable-source-maps run-s clean build serve",
+    "build": "yarn build:es --analyze=verbose",
+    "build:demo": "esbuild demo/admin.js --bundle --minify --outfile=demo/admin.min.js",
+    "build:ts": "tsc --build",
+    "build:es": "esbuild src/index.ts --platform=node --external:simple-oauth2 --target=node22 --bundle --format=esm --minify --sourcemap --outdir=dist --out-extension:.js=.mjs",
+    "clean": "rm -rf dist build .tsbuildinfo",
+    "serve": "node --enable-source-maps dist/index.mjs",
+    "serve:debug": "node --inspect --enable-source-maps dist/index.mjs",
+    "watch": "run-s clean build && run-p watch:es watch:node",
+    "watch:node": "nodemon -w dist/ --enable-source-maps dist/index.mjs",
+    "watch:debug-node": "nodemon -w dist/ --inspect --enable-source-maps dist/index.mjs",
+    "watch:ts": "yarn build:ts --watch --preserveWatchOutput",
+    "watch:es": "yarn build:es --watch",
+    "release": "standard-version --sign"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@web/dev-server": "^0.4.6",
+    "esbuild": "^0.24.2"
+  },
+  "packageManager": "yarn@1.22.22+sha256.c17d3797fb9a9115bf375e31bfd30058cac6bc9c3b8807a3d8cb2094794b51ca"
+}

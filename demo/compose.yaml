@@ -1,0 +1,27 @@
+networks:
+  internal:
+  alwatr-public-network:
+    name: alwatr-public-network
+    external: true
+
+services:
+  cms-backend:
+    image: ${CMS_BACKEND_IMAGE}
+
+    restart: unless-stopped
+
+    environment:
+      - OAUTH_GITHUB_CLIENT_SECRET=${OAUTH_GITHUB_CLIENT_SECRET}
+      - OAUTH_GITHUB_CLIENT_ID=${OAUTH_GITHUB_CLIENT_ID}
+      - OAUTH_GITHUB_SCOPE=${OAUTH_GITHUB_SCOPE-}
+      - ALWATR_DEBUG=${CMS_BACKEND_DEBUG-}
+    
+    networks:
+      alwatr-public-network:
+  
+    labels:
+      traefik.enable: true
+      traefik.port: 80
+      traefik.frontend.rule: Host:${DOMAIN};
+      traefik.frontend.entryPoints: http, https
+      traefik.frontend.redirect.entryPoint: https
