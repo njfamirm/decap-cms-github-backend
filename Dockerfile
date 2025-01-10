@@ -8,11 +8,7 @@ ENV NODE_ENV production
 
 # Install dependencies
 COPY package.json *.lock ./
-RUN if [ -f *.lock ]; then \
-      yarn install --frozen-lockfile --non-interactive --production false; \
-    else \
-      yarn install --non-interactive --production false; \
-    fi;
+RUN yarn install --frozen-lockfile --non-interactive --production false
 
 COPY . .
 
@@ -35,16 +31,14 @@ CMD ["yarn", "serve"]
 
 ENV NODE_ENV production
 ENV NODE_OPTIONS --enable-source-maps
-# ENV ALWATR_DEBUG 1
 ENV HOST 0.0.0.0
 ENV PORT 80
+
 EXPOSE 80
 
 # Copy all deps from last stage
 COPY --from=builder /app/node_modules ./node_modules
 
-# Copy builded files from last stage
-ARG PACKAGE_SOURCE
 COPY --from=builder /app/package.json ./
+
 COPY --from=builder /app/dist ./dist
-RUN pwd; ls -lAhF;
