@@ -1,6 +1,6 @@
 {
   "name": "@njfamirm/decap-cms-github-backend",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "private": true,
   "description": "Self-hosted decap cms github backend.",
   "license": "MIT",
