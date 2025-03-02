@@ -1,9 +1,15 @@
-import {nanoServer} from '../lib/nano-server.js';
+import {apiServer} from '../lib/api-server.js';
 
-nanoServer.route('GET', '/', () => ({
-  ok: true,
-  data: {
-    app: '..:: Decap CMS Backend Microservice ::..',
-    message: 'Hello',
+apiServer.defineRoute({
+  method: 'GET',
+  url: '/',
+  handler: function () {
+    this.serverResponse.replyJson({
+      ok: true,
+      data: {
+        app: '..:: Decap CMS Backend Microservice ::..',
+        message: 'Hello',
+      },
+    });
   },
-}));
+});
