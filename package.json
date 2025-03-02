@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@alwatr/logger": "^5.4.0",
-    "@alwatr/nano-server": "^1.2.7",
+    "@alwatr/nanotron": "^4.9.0",
     "simple-oauth2": "~5.1.0",
     "tslib": "^2.8.1"
   },
