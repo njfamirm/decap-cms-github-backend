@@ -1,8 +1,8 @@
-import { createLogger } from "@alwatr/logger";
+import {createLogger} from '@alwatr/logger';
 
-const clientId = process.env.OAUTH_GITHUB_CLIENT_ID
-const clientSecret = process.env.OAUTH_GITHUB_CLIENT_SECRET
-const scope = process.env.OAUTH_GITHUB_SCOPE
+const clientId = process.env.OAUTH_GITHUB_CLIENT_ID;
+const clientSecret = process.env.OAUTH_GITHUB_CLIENT_SECRET;
+const scope = process.env.OAUTH_GITHUB_SCOPE;
 
 if (clientId == undefined) {
   throw new Error('github client id required, OAUTH_GITHUB_CLIENT_ID="123_123_123" yarn start');
@@ -28,6 +28,6 @@ export const config = {
   },
 };
 
-export const logger = createLogger('decap-cms-backend')
+export const logger = createLogger('decap-cms-backend');
 
-logger.logProperty?.('config', config)
+logger.logProperty?.('config', config);
