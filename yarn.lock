@@ -7,6 +7,14 @@
   resolved "https://registry.yarnpkg.com/@alwatr/logger/-/logger-2.4.1.tgz#a7b666a42e0e68b2e12660fdb784e6f30a15ff03"
   integrity sha512-4XDAXnaHIPNE7pAMbHJqFxuObtmKWRmC9FTeQhmUWw9bgkPQsYlcCaHNHyRLXJSD66L5CNEIWBNMxty3ETnNhw==
 
+"@alwatr/logger@^5.4.0":
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/logger/-/logger-5.4.0.tgz#843664e1060d5c59e4d6c126b6401e234fad7ecb"
+  integrity sha512-K+yiFjjJ2vz8pvhtOs0A5lJjrqI3D3/7iWcO0Jm4xeYi+0DhMnc9YlI1BlsURr1WrPtoesPZRD0H2Td3rrnxxw==
+  dependencies:
+    "@alwatr/package-tracer" "^5.4.0"
+    "@alwatr/platform-info" "^5.4.0"
+
 "@alwatr/math@^1.3.1":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@alwatr/math/-/math-1.3.1.tgz#53d32f761ce66f86038a805563aeaecbfe87c059"
@@ -22,6 +30,18 @@
     "@alwatr/logger" "^2.4.1"
     "@alwatr/math" "^1.3.1"
     "@alwatr/util" "^1.4.1"
+
+"@alwatr/package-tracer@^5.4.0":
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/package-tracer/-/package-tracer-5.4.0.tgz#7d02b38f0df54ca5d1958348e6c1947611824255"
+  integrity sha512-RUtTGuM7GMLX4E7wO8MA7M2AfrzreOb/QvbzW0ON+6WNzwh4ebyQUTLMuNxtI5Aj37pHgyV3FKWWlVUZcqHMIQ==
+
+"@alwatr/platform-info@^5.4.0":
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/platform-info/-/platform-info-5.4.0.tgz#780a04355a93cc1f8eb01f5247df34f5849d2092"
+  integrity sha512-tfIApk1zAqIpNuFOg+AOwEQ4glssbTbDFQO18r9HVqMctv5ABx50YuS+zPcV7POGzuwN5IFt/899vIQmR7XfrA==
+  dependencies:
+    "@alwatr/package-tracer" "^5.4.0"
 
 "@alwatr/type@^1.2.4":
   version "1.2.4"
