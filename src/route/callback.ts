@@ -1,22 +1,22 @@
-import { AuthorizationCode } from "simple-oauth2";
-import { config, logger } from "../config.js";
-import { apiServer } from "../lib/api-server.js";
+import {AuthorizationCode} from 'simple-oauth2';
+import {config, logger} from '../config.js';
+import {apiServer} from '../lib/api-server.js';
 
 apiServer.defineRoute({
-  method: "GET",
-  url: "/callback",
+  method: 'GET',
+  url: '/callback',
   handler: async function () {
     const host = this.headers.host;
     const url = new URL(`https://${host}/${this.url}`);
-    const provider = url.searchParams.get("provider");
-    const code = url.searchParams.get("code");
-    logger.logMethodArgs?.("get-callback", { host, url, provider });
+    const provider = url.searchParams.get('provider');
+    const code = url.searchParams.get('code');
+    logger.logMethodArgs?.('get-callback', {host, url, provider});
 
-    if (provider !== "github") {
+    if (provider !== 'github') {
       return {
         ok: false,
         statusCode: 400,
-        errorCode: "invalid_provider",
+        errorCode: 'invalid_provider',
       };
     }
 
@@ -24,7 +24,7 @@ apiServer.defineRoute({
       return {
         ok: false,
         statusCode: 400,
-        errorCode: "require_code",
+        errorCode: 'require_code',
       };
     }
 
@@ -38,9 +38,9 @@ apiServer.defineRoute({
     };
 
     const accessToken = await client.getToken(tokenParams);
-    const token = accessToken.token["access_token"] as string;
+    const token = accessToken.token['access_token'] as string;
 
-    this.serverResponse.reply(renderBody("success", token));
+    this.serverResponse.reply(renderBody('success', token));
 
     return {
       ok: true,
@@ -54,7 +54,7 @@ function renderBody(status: string, token?: string) {
     <script>
       const receiveMessage = (message) => {
         window.opener.postMessage(
-          'authorization:github:${status}:${JSON.stringify({ token })}',
+          'authorization:github:${status}:${JSON.stringify({token})}',
           message.origin
         );
 
