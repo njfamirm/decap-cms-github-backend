@@ -1,13 +1,13 @@
 import {AuthorizationCode} from 'simple-oauth2';
 import {config, logger} from '../config.js';
-import {nanoServer} from '../lib/nano-server.js'
+import {nanoServer} from '../lib/nano-server.js';
 
 nanoServer.route('GET', '/callback', async (connection) => {
   const host = connection.incomingMessage.headers.host;
   const url = new URL(`https://${host}/${connection.url}`);
   const provider = url.searchParams.get('provider');
   const code = url.searchParams.get('code');
-  logger.logMethodArgs?.('get-callback', {host, url, provider})
+  logger.logMethodArgs?.('get-callback', {host, url, provider});
 
   if (provider !== 'github') {
     return {
@@ -34,7 +34,7 @@ nanoServer.route('GET', '/callback', async (connection) => {
   const accessToken = await client.getToken(tokenParams);
   const token = accessToken.token['access_token'] as string;
 
-  connection.serverResponse.end(renderBody('success', token))
+  connection.serverResponse.end(renderBody('success', token));
 
   return {
     ok: true,

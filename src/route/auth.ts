@@ -9,7 +9,7 @@ nanoServer.route('GET', '/auth', (connection) => {
   const host = connection.incomingMessage.headers.host;
   const url = new URL(`https://${host}/${connection.url}`);
   const provider = url.searchParams.get('provider');
-  logger.logMethodArgs?.('get-auth', {host, url, provider})
+  logger.logMethodArgs?.('get-auth', {host, url, provider});
 
   if (provider !== 'github') {
     return {
@@ -30,7 +30,7 @@ nanoServer.route('GET', '/auth', (connection) => {
     state: randomString(),
   });
 
-  logger.logProperty?.('authorizationUri', authorizationUri)
+  logger.logProperty?.('authorizationUri', authorizationUri);
 
   connection.serverResponse.setHeader('Location', authorizationUri);
   return {

@@ -1,27 +1,27 @@
 {
   "name": "@njfamirm/decap-cms-github-backend-demo",
-  "author": "S. Amir Mohammad Najafi <njfamirm@gamil.com> (https://www.njfamirm.ir)",
+  "private": true,
   "description": "Demo of self-hosted decap cms github backend.",
   "license": "MIT",
-  "private": true,
+  "author": "S. Amir Mohammad Najafi <njfamirm@gamil.com> (https://www.njfamirm.ir)",
   "type": "module",
   "scripts": {
     "b": "yarn build",
-    "s": "yarn start",
-    "start": "NODE_OPTIONS=--enable-source-maps run-s clean build serve",
     "build": "yarn build:es --analyze=verbose",
     "build:demo": "esbuild demo/admin.js --bundle --minify --outfile=demo/admin.min.js",
-    "build:ts": "tsc --build",
     "build:es": "esbuild src/index.ts --platform=node --external:simple-oauth2 --target=node22 --bundle --format=esm --minify --sourcemap --outdir=dist --out-extension:.js=.mjs",
+    "build:ts": "tsc --build",
     "clean": "rm -rf dist build .tsbuildinfo",
+    "release": "standard-version --sign",
+    "s": "yarn start",
     "serve": "node --enable-source-maps dist/index.mjs",
     "serve:debug": "node --inspect --enable-source-maps dist/index.mjs",
+    "start": "NODE_OPTIONS=--enable-source-maps run-s clean build serve",
     "watch": "run-s clean build && run-p watch:es watch:node",
-    "watch:node": "nodemon -w dist/ --enable-source-maps dist/index.mjs",
     "watch:debug-node": "nodemon -w dist/ --inspect --enable-source-maps dist/index.mjs",
-    "watch:ts": "yarn build:ts --watch --preserveWatchOutput",
     "watch:es": "yarn build:es --watch",
-    "release": "standard-version --sign"
+    "watch:node": "nodemon -w dist/ --enable-source-maps dist/index.mjs",
+    "watch:ts": "yarn build:ts --watch --preserveWatchOutput"
   },
   "dependencies": {
     "netlify-cms-app": "^2.15.72"

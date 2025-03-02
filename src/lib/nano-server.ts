@@ -1,4 +1,4 @@
-import {AlwatrNanoServer} from '@alwatr/nano-server'
+import {AlwatrNanoServer} from '@alwatr/nano-server';
 
 import {config} from '../config.js';
 
