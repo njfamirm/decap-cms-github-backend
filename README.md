@@ -4,5 +4,5 @@ OAuth service as Github backend for Decap CMS inspired by [netlify-cms-oauth](ht
 
 ## Usage
 
-Read [A Step-by-Step Guide to Self-Hosting Decap CMS
-](https://www.njfamirm.ir/en/blog/self-hosting-decap-cms/) from my website to learn how can use this service.
+Read [A Step-by-Step Guide to Self-Hosting Decap CMS without Netlify
+](https://medium.com/@njfamirm/a-step-by-step-guide-to-self-hosting-decap-cms-5425ab44abca) from medium to learn how can use this service.
