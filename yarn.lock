@@ -2,114 +2,114 @@
 # yarn lockfile v1
 
 
-"@alwatr/async-queue@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/async-queue/-/async-queue-5.4.0.tgz#3c8494bbc1840dd747a3680d3f61c27dee41f9ab"
-  integrity sha512-YkZ6HMi+2Au/MhE7KqLIJgpeOsX0JqcR9PKtUO/JE/I6PCIKjHlwqeBtZfMBW3KMnt02asBza13L8I+IpV3X4w==
+"@alwatr/async-queue@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/async-queue/-/async-queue-5.5.0.tgz#6a3e1dd45253e41a6ca84094a69dfef134c08821"
+  integrity sha512-wuh2DcfL+sVJ/SsYcHUU6VkM0kqiDNunSfYc80z7SPKPdYkCVG97Qdf8yFs64L5GwsvHVdTzhnkJBMJ/zDdJWQ==
   dependencies:
-    "@alwatr/flatomise" "^5.4.0"
-    "@alwatr/package-tracer" "^5.4.0"
+    "@alwatr/flatomise" "^5.5.0"
+    "@alwatr/package-tracer" "^5.5.0"
 
-"@alwatr/crypto@^4.9.0":
-  version "4.9.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/crypto/-/crypto-4.9.0.tgz#3087e88db4ee290e3467c8925f0d9bb8525eb1f2"
-  integrity sha512-oMZjJXGaGTMOGtHRX2i23JcgHhkfrBOANgtevPWtUZuRYpz+O0Lr6DIsfWyuMYiNPaOiWOTRfh/Rx6CDPJixJg==
+"@alwatr/crypto@^4.9.1":
+  version "4.9.1"
+  resolved "https://registry.yarnpkg.com/@alwatr/crypto/-/crypto-4.9.1.tgz#7c313ec41b0a3b64868af7cd51a3884708bc876b"
+  integrity sha512-LCWyBolRG0N+1UUOEVUCObt4ABZPDbGOC2EpbwMcxb69uzh9B5HnftoyItGY8xXmypTZ+ZEes0cCmom54i4o8g==
   dependencies:
-    "@alwatr/nanolib" "^5.4.0"
+    "@alwatr/nanolib" "^5.5.0"
 
-"@alwatr/dedupe@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/dedupe/-/dedupe-5.4.0.tgz#7e1a3ea49794754cd8ec1e0eae902dad4ed7d883"
-  integrity sha512-/US0y3Fex2gP18lUaYHAe4ONwaA5Nslj0P4P1nMi8G5HGE03IzwkfpyK35GUDqz5/3ahyFtNdp4/d3ZQzTlDzA==
+"@alwatr/dedupe@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/dedupe/-/dedupe-5.5.0.tgz#6af8fc427ad1959135be3680d576eb53ba2867b9"
+  integrity sha512-xuXt5wq/iAe6uA5GPziXpBA6n6X3AOT6J4GE2OkhfDMQahp2xA+qp8dnZKJzK4dBtjs0TSm9TqzWqeDQFc/cdQ==
   dependencies:
-    "@alwatr/global-this" "^5.4.0"
-    "@alwatr/package-tracer" "^5.4.0"
-    "@alwatr/polyfill-has-own" "^5.4.0"
+    "@alwatr/global-this" "^5.5.0"
+    "@alwatr/package-tracer" "^5.5.0"
+    "@alwatr/polyfill-has-own" "^5.5.0"
 
-"@alwatr/deep-clone@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/deep-clone/-/deep-clone-5.4.0.tgz#0868dceafeccd47e706fe32ffc62c9a8aa1222b1"
-  integrity sha512-o1OkfotfkIG7zdVg3pZQICD/rPdvONGjWXh8DTlieckxKtbbJ+DD2jT++4U7ES+G0cY+KWPG8oJaDb6gslcXnA==
+"@alwatr/deep-clone@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/deep-clone/-/deep-clone-5.5.0.tgz#8e9285c79ee5ad1bc26f0d99dd8a67e661dc6d36"
+  integrity sha512-Icug2n9RZKG74AZdLBC4c2JxlKkKrL6+AnLj9cFAkxcy62dUjX/k2hTSCjXE2jrEJqFr0S32PKts+ppua5LSyg==
   dependencies:
-    "@alwatr/package-tracer" "^5.4.0"
+    "@alwatr/package-tracer" "^5.5.0"
 
-"@alwatr/delay@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/delay/-/delay-5.4.0.tgz#2e8128f88f01f7c4b9b8049ffc2e7862659b07ba"
-  integrity sha512-DTkuaIg/r7bkdgfdRYg2Xd1JJ1TBTdMH/65yHVdMj94yF5PV3G+a3V/7XOU12nSGzJZ3gAnRoEQP2wQQEZS4Lg==
+"@alwatr/delay@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/delay/-/delay-5.5.0.tgz#5601e7dab9cfb1477fda6a18c199271f4cd70117"
+  integrity sha512-HEqOk84C7RVHVtx4MlJ1Zflo77o7DQ9ZgPnjubal6fZFdrirv1OtbX36nilEbfbP5fYKoaxmexD8rgAq2DYQHQ==
   dependencies:
-    "@alwatr/global-this" "^5.4.0"
-    "@alwatr/package-tracer" "^5.4.0"
-    "@alwatr/parse-duration" "^5.4.0"
+    "@alwatr/global-this" "^5.5.0"
+    "@alwatr/package-tracer" "^5.5.0"
+    "@alwatr/parse-duration" "^5.5.0"
 
-"@alwatr/env@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/env/-/env-5.4.0.tgz#f97f9d5bd82f78b5e7f82229c65a309495823473"
-  integrity sha512-LLUX67XBrzJ3F0WEXpccE4d/vLtxzJFOIBXLK8WAeVcOs8FSZI8a99DpGKG1g6qIAle3ZEnqa/LverC7NRSwoQ==
+"@alwatr/env@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/env/-/env-5.5.0.tgz#71f4f1cf687fee2d3a68a121a9844df434ed9f69"
+  integrity sha512-bN/xb7sgETJa+1/7eNhmc0li6/WKszUt/yPqbP83bz63xoE+ZJ1OLdbcqmAL84F86Cy81ivhxtl+jWhNEJ5yow==
   dependencies:
-    "@alwatr/package-tracer" "^5.4.0"
-    "@alwatr/platform-info" "^5.4.0"
+    "@alwatr/package-tracer" "^5.5.0"
+    "@alwatr/platform-info" "^5.5.0"
 
-"@alwatr/exit-hook@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/exit-hook/-/exit-hook-5.4.0.tgz#c79b7a29badc696d8028164fa08d7e5e053ae0cc"
-  integrity sha512-5VTj679aA63VOiYqScayb7FcGaxK0EJmmi1klvGso2sgow4RHDRqcA6GcmKKPuTIe9Ue/cfoXgnZHcMxQmyFew==
+"@alwatr/exit-hook@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/exit-hook/-/exit-hook-5.5.0.tgz#1eeec176ef53938d949c1314af4485a62cceedc4"
+  integrity sha512-eZ+D0tiGQiWd/ZUHq9uTtvsOHHyLm0W24Lk7iyTiKGbeVIN/fIXDV7wS5kKkG1eBzUC9c7QkG8NyuWo0129XLQ==
   dependencies:
-    "@alwatr/package-tracer" "^5.4.0"
+    "@alwatr/package-tracer" "^5.5.0"
 
-"@alwatr/fetch@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/fetch/-/fetch-5.4.0.tgz#f24fd12afad3544d4ed9dd3c3f5ea92a627f3372"
-  integrity sha512-IOVjWEdQf13dB5D4CWGvgVfF34VEw5Y9V1NK1DD5fMs+ctRjLtVmW8aa9ijq7vq5FTllFifHTihCrOBxtQCXTQ==
+"@alwatr/fetch@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/fetch/-/fetch-5.5.0.tgz#75407b0effb64602fa3030b3204a782d11662ebe"
+  integrity sha512-uY+G/8nN3asLAie1/UmYCfAP/H+sgtJc/dpgcjdTkp3kAqsIibOkp0G2MxWSfF1Me5oJyH3RO+5LUdg6lzNNig==
   dependencies:
-    "@alwatr/delay" "^5.4.0"
-    "@alwatr/global-this" "^5.4.0"
-    "@alwatr/http-primer" "^5.4.0"
-    "@alwatr/logger" "^5.4.0"
-    "@alwatr/package-tracer" "^5.4.0"
-    "@alwatr/parse-duration" "^5.4.0"
+    "@alwatr/delay" "^5.5.0"
+    "@alwatr/global-this" "^5.5.0"
+    "@alwatr/http-primer" "^5.5.0"
+    "@alwatr/logger" "^5.5.0"
+    "@alwatr/package-tracer" "^5.5.0"
+    "@alwatr/parse-duration" "^5.5.0"
 
-"@alwatr/flat-string@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/flat-string/-/flat-string-5.4.0.tgz#10359deb1d4413b1f758b7f3bd70bfc0f18122c9"
-  integrity sha512-MenJRLW+9aANeLZ6Jezs6DLZcw3DSQpe7eEgOx6Lad+Oac01sQd21nMb1+2vhl3XgQ0L4vzzlgX5X/oFioeECA==
+"@alwatr/flat-string@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/flat-string/-/flat-string-5.5.0.tgz#59bff3a63f4ccb56a3326a0a27110d9bc272ef8e"
+  integrity sha512-87kDdrm+Igybci8/TPVyNqTdiHkFz9em3yuWUEmLecAxvCyglQBlbaV6uXES/KP6nXCJz8EvJqxEcBgI7LWoNA==
   dependencies:
-    "@alwatr/package-tracer" "^5.4.0"
+    "@alwatr/package-tracer" "^5.5.0"
 
-"@alwatr/flatomise@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/flatomise/-/flatomise-5.4.0.tgz#f89f15f8853c65e47a3ca4b4b4fd24a13acd7753"
-  integrity sha512-fV2+4GRNID2D1FfvB2TsN8U2LAB0uEgUn6DwccOZpxiKhRzyJpChkjZ9Gq8uUDJ7D9N3KnibWU3VeA4ov2+H6Q==
+"@alwatr/flatomise@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/flatomise/-/flatomise-5.5.0.tgz#2224bed7a64cdd5f4ea060a1c7895622893e3f81"
+  integrity sha512-p6Bt2v2RLR3xbKQbglrpKJzCilRWEhELPfAsTnS8aAO/ZcarFhX76aVgeZo3Ig4GXzdEombchCWtg3eB33fGIA==
   dependencies:
-    "@alwatr/package-tracer" "^5.4.0"
+    "@alwatr/package-tracer" "^5.5.0"
 
-"@alwatr/global-this@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/global-this/-/global-this-5.4.0.tgz#7bab734719203753f37fa555c6c0dbec00218c51"
-  integrity sha512-AVfOjjDYjbMrwnbHfxwx86xU3rpqFiwM097XL/6KNNzADJG5IwTJ8tUOz87MQc5UcUsAoKQUxhLB/haz+FB6uQ==
+"@alwatr/global-this@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/global-this/-/global-this-5.5.0.tgz#15dabd6676e0f49abfae055cf36d50f49f22b3c9"
+  integrity sha512-yDiRsoBbtQN1aHb5V/BxGZpER3aYlQuIBfDvS8Em+HMtRzeTMkxlu6iZnzShRkwJ+stY5GgakeSksmlL+dAWIQ==
   dependencies:
-    "@alwatr/package-tracer" "^5.4.0"
+    "@alwatr/package-tracer" "^5.5.0"
 
-"@alwatr/http-primer@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/http-primer/-/http-primer-5.4.0.tgz#41cf76549d866f42a0a0ebd4d0855460dc77c886"
-  integrity sha512-b0gXG3s7lzneHzdfXwT5zPsyV4LlxB4lpNYvPAFaDADbRoNROwx6GRTm6CpFvcROg22rhfL3JfedXZQzwxmXhA==
+"@alwatr/http-primer@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/http-primer/-/http-primer-5.5.0.tgz#20b1179042978df16800b1ed38e86c25c70758bf"
+  integrity sha512-t6A8eYr1avSztiDgqasTQJgMSgWSMdQSfG49Gq5O4hLwYYx4rhq4D8CP8blwxBROmzBsra07sPf3LrE0mRhtbg==
   dependencies:
-    "@alwatr/package-tracer" "^5.4.0"
+    "@alwatr/package-tracer" "^5.5.0"
 
-"@alwatr/is-number@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/is-number/-/is-number-5.4.0.tgz#69327ed7447404d034d1eada4e142ca193fd3733"
-  integrity sha512-rPAcS2WEvVkM6vJrfwc74eOJ5W1J3hQI/Gt3aE1kpfL+0xmlZDMezBRylgrxj20drZvNo6sS7/a8vJHy0RYzTg==
+"@alwatr/is-number@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/is-number/-/is-number-5.5.0.tgz#88b5cfb3ed8cce6fb8cc36c6566f398d41b95915"
+  integrity sha512-XEPytrmTHHwOZUhdaP02j1+8H+5ElQORSoTL2OXYMboNiTA6jBcHHvpHhFdxg4KppJ8sWHWaSvF7HKUSRp/KHA==
   dependencies:
-    "@alwatr/package-tracer" "^5.4.0"
+    "@alwatr/package-tracer" "^5.5.0"
 
-"@alwatr/local-storage@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/local-storage/-/local-storage-5.4.0.tgz#9c24776309d16374fcfe7e40cd1038ed3d012939"
-  integrity sha512-texKa54XsM9Oep6Ymvi5IORgN6nm+WKzpZvgi03w2rSwpBo79lZShilLJiLIiCs/ENmcdWwlwon2EcsXsHcIAg==
+"@alwatr/local-storage@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/local-storage/-/local-storage-5.5.0.tgz#f1803e70df987e6a3989a6dab9574f72b381ae90"
+  integrity sha512-bl4GL2ltWky715E75CBQkhZYhb6PzdGuEAepq9zv+50fXhJJPWHaoFY1brY5WvKa1OECct0ViqvgZl+hEEscFQ==
   dependencies:
-    "@alwatr/package-tracer" "^5.4.0"
+    "@alwatr/package-tracer" "^5.5.0"
 
 "@alwatr/logger@^5.4.0":
   version "5.4.0"
@@ -119,72 +119,85 @@
     "@alwatr/package-tracer" "^5.4.0"
     "@alwatr/platform-info" "^5.4.0"
 
-"@alwatr/nanolib@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/nanolib/-/nanolib-5.4.0.tgz#436f30bb0dcdde1d0b3065e8c9a2c33e55c34399"
-  integrity sha512-h28U07W5SVE9lAkQ+LQcAD32DNo6Bmgx4xGY32wxZJkd9rgOEAqxDQn984Ugg0zxR6SgFA22SZt3PV6ANXm5Hg==
+"@alwatr/logger@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/logger/-/logger-5.5.0.tgz#c2ac2570fc8edf1999440d123049411576305dec"
+  integrity sha512-S+Q7tUrtDrr0TfKVQ9l0JrZUBIWxMm/fV8JMOwA60zAXcpGMIlIBFzjvlsMlAqMV8YhlHRVrXhyrsKZ4+XNMFA==
   dependencies:
-    "@alwatr/async-queue" "^5.4.0"
-    "@alwatr/dedupe" "^5.4.0"
-    "@alwatr/deep-clone" "^5.4.0"
-    "@alwatr/delay" "^5.4.0"
-    "@alwatr/env" "^5.4.0"
-    "@alwatr/exit-hook" "^5.4.0"
-    "@alwatr/fetch" "^5.4.0"
-    "@alwatr/flat-string" "^5.4.0"
-    "@alwatr/flatomise" "^5.4.0"
-    "@alwatr/global-this" "^5.4.0"
-    "@alwatr/http-primer" "^5.4.0"
-    "@alwatr/is-number" "^5.4.0"
-    "@alwatr/local-storage" "^5.4.0"
-    "@alwatr/logger" "^5.4.0"
-    "@alwatr/node-fs" "^5.4.0"
-    "@alwatr/package-tracer" "^5.4.0"
-    "@alwatr/parse-duration" "^5.4.0"
-    "@alwatr/platform-info" "^5.4.0"
-    "@alwatr/render-state" "^5.4.0"
-    "@alwatr/resolve-url" "^5.4.0"
-    "@alwatr/unicode-digits" "^5.4.0"
+    "@alwatr/package-tracer" "^5.5.0"
+    "@alwatr/platform-info" "^5.5.0"
 
-"@alwatr/nanotron-api-server@^4.9.0":
-  version "4.9.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/nanotron-api-server/-/nanotron-api-server-4.9.0.tgz#f47132172521100aa81bf36bd5c33da49e4fb0b5"
-  integrity sha512-KiUsTuOXBmyP/qKGf2PAbeINH2ldvAhmrf4pYGCjNu1FkeJodV5UOGF8UvW8sPS2w1aU9gNgebJbcXoWisMVlA==
+"@alwatr/nanolib@^5.5.0":
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/@alwatr/nanolib/-/nanolib-5.5.1.tgz#425d26f29f8f50cde257eff1326625e347970d7e"
+  integrity sha512-VFbIRjKCTSTomFFhhRamBXBfj0LHstxdcMT/QEqbhhkAxQu79ruY44X7qKcAupWSu/ZSN69wm8wyknfcVg+ClQ==
   dependencies:
-    "@alwatr/nanolib" "^5.4.0"
+    "@alwatr/async-queue" "^5.5.0"
+    "@alwatr/dedupe" "^5.5.0"
+    "@alwatr/deep-clone" "^5.5.0"
+    "@alwatr/delay" "^5.5.0"
+    "@alwatr/env" "^5.5.0"
+    "@alwatr/exit-hook" "^5.5.0"
+    "@alwatr/fetch" "^5.5.0"
+    "@alwatr/flat-string" "^5.5.0"
+    "@alwatr/flatomise" "^5.5.0"
+    "@alwatr/global-this" "^5.5.0"
+    "@alwatr/http-primer" "^5.5.0"
+    "@alwatr/is-number" "^5.5.0"
+    "@alwatr/local-storage" "^5.5.0"
+    "@alwatr/logger" "^5.5.0"
+    "@alwatr/node-fs" "^5.5.0"
+    "@alwatr/package-tracer" "^5.5.0"
+    "@alwatr/parse-duration" "^5.5.0"
+    "@alwatr/platform-info" "^5.5.0"
+    "@alwatr/render-state" "^5.5.0"
+    "@alwatr/resolve-url" "^5.5.1"
+    "@alwatr/unicode-digits" "^5.5.0"
 
-"@alwatr/nanotron@^4.9.0":
-  version "4.9.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/nanotron/-/nanotron-4.9.0.tgz#575617451f385546c81b66757caa8aae547600ca"
-  integrity sha512-d80lKOLbs7ltu6v8tC38Xh5QDiXkRB0oVt+G3oX4lVEqOFWNTsfse4kKpEANlqRTXBCZOhY93HUHIkBz1SRSMA==
+"@alwatr/nanotron-api-server@^4.9.1":
+  version "4.9.1"
+  resolved "https://registry.yarnpkg.com/@alwatr/nanotron-api-server/-/nanotron-api-server-4.9.1.tgz#59c6e1d643d00ad0be94bbdb2eb5b2df4940ee64"
+  integrity sha512-yt+c1gZovGhEAwI6d3GWSKTZBdlbFG6erq9f0iNCtC3R1fofziT/U1+traf0l1s3Zta9fOyHkA5ZXhNboWzaNg==
   dependencies:
-    "@alwatr/crypto" "^4.9.0"
-    "@alwatr/nanolib" "^5.4.0"
-    "@alwatr/nanotron-api-server" "^4.9.0"
-    "@alwatr/pre-handlers" "^4.9.0"
+    "@alwatr/nanolib" "^5.5.0"
 
-"@alwatr/node-fs@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/node-fs/-/node-fs-5.4.0.tgz#28e453f85391c7d32c8029b2ef59861abb38e7a4"
-  integrity sha512-COkkI0jMrNvlgvGAyKlRw4mDLzy9kSPXxEjT2RjFL3bTyQly5l7CLNTkD3FwIH0msvN89LuG4Q8yV8JIW5cdOg==
+"@alwatr/nanotron@^4.9.1":
+  version "4.9.1"
+  resolved "https://registry.yarnpkg.com/@alwatr/nanotron/-/nanotron-4.9.1.tgz#c92a28b3791f1d5c8bc5effa399763287e9ca7c3"
+  integrity sha512-Wf8Ty52Sj9pFky71ROPawSGOQMDBlFEX8MD/j0GL/uRFPgzBR+D9idFXU+GZw1xqGpQDAEoxI7GhGHUkJ1NcAQ==
   dependencies:
-    "@alwatr/async-queue" "^5.4.0"
-    "@alwatr/flat-string" "^5.4.0"
-    "@alwatr/logger" "^5.4.0"
-    "@alwatr/package-tracer" "^5.4.0"
+    "@alwatr/crypto" "^4.9.1"
+    "@alwatr/nanolib" "^5.5.0"
+    "@alwatr/nanotron-api-server" "^4.9.1"
+    "@alwatr/pre-handlers" "^4.9.1"
+
+"@alwatr/node-fs@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/node-fs/-/node-fs-5.5.0.tgz#143a279eb8a7f5afbfe65126e1fdd0f6ec5ea2ee"
+  integrity sha512-M9FGyOGa8TFcD5ibXscuRAaLmQT3GTt2OQJ9dXL7soQ0ZeyEKMpesZhCgCE6j4NsfvsuRksKPYtQ1l/Jq7pu0w==
+  dependencies:
+    "@alwatr/async-queue" "^5.5.0"
+    "@alwatr/flat-string" "^5.5.0"
+    "@alwatr/logger" "^5.5.0"
+    "@alwatr/package-tracer" "^5.5.0"
 
 "@alwatr/package-tracer@^5.4.0":
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/@alwatr/package-tracer/-/package-tracer-5.4.0.tgz#7d02b38f0df54ca5d1958348e6c1947611824255"
   integrity sha512-RUtTGuM7GMLX4E7wO8MA7M2AfrzreOb/QvbzW0ON+6WNzwh4ebyQUTLMuNxtI5Aj37pHgyV3FKWWlVUZcqHMIQ==
 
-"@alwatr/parse-duration@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/parse-duration/-/parse-duration-5.4.0.tgz#fe48e1b9c40893d5e6c1c48bcb3e3694daa6fba8"
-  integrity sha512-/1xD+I+0vDYbrFAorjagIqt71vVasOHbc0DRCch2VLCz6BnMw7E6h6QFieVtWjdoEGHWqjVbBKzjyma+DRDqnA==
+"@alwatr/package-tracer@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/package-tracer/-/package-tracer-5.5.0.tgz#fdc50af685c1b3af26f9c9f921122b8fe3d34cb0"
+  integrity sha512-x4lGfsTAQ4Ev9hTJNEF5+3e27gFlR1G+G7OHPtL1OOaBQOIv7H5Qf9197/ItOSl6fgn+fa1Rb1MEc/sWYDw9mQ==
+
+"@alwatr/parse-duration@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/parse-duration/-/parse-duration-5.5.0.tgz#07bfde0ad631aacccc55e14c9eb00b277426bdb4"
+  integrity sha512-90pvUYTpgfSa6bgi8g1vmCdZDE+xQvxRfjhYdxSbpv6HeESs4fgLuCso3i0U9h9cquBL1JUW2tCcBF6Fazt7bw==
   dependencies:
-    "@alwatr/is-number" "^5.4.0"
-    "@alwatr/package-tracer" "^5.4.0"
+    "@alwatr/is-number" "^5.5.0"
+    "@alwatr/package-tracer" "^5.5.0"
 
 "@alwatr/platform-info@^5.4.0":
   version "5.4.0"
@@ -193,42 +206,49 @@
   dependencies:
     "@alwatr/package-tracer" "^5.4.0"
 
-"@alwatr/polyfill-has-own@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/polyfill-has-own/-/polyfill-has-own-5.4.0.tgz#dfb7f377cdc3fe39e32163484331ea6598a1754c"
-  integrity sha512-v7FxTnrW3CxeKuj4p7m9+D2VVn1scboVYpGGc+EbEas0csz/nPxbpzi8Yed9gIps6v1eVkU5mZmn2X+FjRM3/g==
+"@alwatr/platform-info@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/platform-info/-/platform-info-5.5.0.tgz#fca7e3a81391fcb6ae738cb3a031217ecdd7a189"
+  integrity sha512-0H8bbwvhWBKuJ1jXukjHfJ5uuTYlWXK8yMjO7JL+6U7aO0FWeTrOvw+o84soTYUc1AOpFGn8US9nsTppgRQYsA==
   dependencies:
-    "@alwatr/package-tracer" "^5.4.0"
+    "@alwatr/package-tracer" "^5.5.0"
 
-"@alwatr/pre-handlers@^4.9.0":
-  version "4.9.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/pre-handlers/-/pre-handlers-4.9.0.tgz#6112887eb47b0427a8746053ae8c8cea52813898"
-  integrity sha512-2o5uPk5VSAFepCLULHDMrjBjB9+n3c5mlAWBJa9l6ifcPOwarSjtpArr4294vMGVWUWaZ43ms9qCtOgFVD1Iww==
+"@alwatr/polyfill-has-own@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/polyfill-has-own/-/polyfill-has-own-5.5.0.tgz#7f884465cc92d2f3746df97a834ec2529f9dcefb"
+  integrity sha512-oraqe/Iw903wSojQjebdT0eiIM9SGRPxM7I3TE1Z63Uck9C5KubPZC/hMMmt78gbGfCLbFEFrk8TMzL+Gp9nrQ==
   dependencies:
-    "@alwatr/nanolib" "^5.4.0"
-    "@alwatr/nanotron-api-server" "^4.9.0"
+    "@alwatr/package-tracer" "^5.5.0"
 
-"@alwatr/render-state@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/render-state/-/render-state-5.4.0.tgz#31fabf27f9042696028f868ad220b330a8564b82"
-  integrity sha512-3nGTUzG701R8UvrR17kGnXSm/wtr6mNXo+HOtSsMCgD0aYrH7+jVgmHonF47IO1rwkRA/dkWmqkJ/BdwkL4V5g==
+"@alwatr/pre-handlers@^4.9.1":
+  version "4.9.1"
+  resolved "https://registry.yarnpkg.com/@alwatr/pre-handlers/-/pre-handlers-4.9.1.tgz#9235ab7a077ebd95fa74a24f695943957857a387"
+  integrity sha512-JStZBS/6uC/LgLKsdpvFThTc/VaPom+zQjLRRigWjrqta8ysyqHuJaLyfb9gbJo9dxMd4So3ZAoV0cVAK30xkg==
   dependencies:
-    "@alwatr/logger" "^5.4.0"
-    "@alwatr/package-tracer" "^5.4.0"
+    "@alwatr/nanolib" "^5.5.0"
+    "@alwatr/nanotron-api-server" "^4.9.1"
 
-"@alwatr/resolve-url@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/resolve-url/-/resolve-url-5.4.0.tgz#b8fc85299126e670b56568b57a790f0d8aa6c547"
-  integrity sha512-0eLfI3/hVJbrQBUoceq0qQftzQcX3DFB7bJbSStUYJaCpezbzN3Ipkz9h/aAwdKRm6HmKXqzBC5EQSc+EAxWdw==
+"@alwatr/render-state@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/render-state/-/render-state-5.5.0.tgz#0687899381be00863f420d9674bf16afe85893c3"
+  integrity sha512-QS3OPT+Q4ip1Cb9zP4zZApTtsx/J69Bu0jMP/ShVYB6725y5V0f41Z4JuUBnshOO0RUnYf78DPFvXj7CtPpIdA==
   dependencies:
-    "@alwatr/package-tracer" "^5.4.0"
+    "@alwatr/logger" "^5.5.0"
+    "@alwatr/package-tracer" "^5.5.0"
 
-"@alwatr/unicode-digits@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@alwatr/unicode-digits/-/unicode-digits-5.4.0.tgz#fef3beefcaf436db15aa61ac06acb4b114ba5392"
-  integrity sha512-1HjyfwaQmDo1rLYm++gnXBvXii1x2xRfwLIUQo8qRygv80FtODhXCtPaHZYUr/gx93epbtWDQ/g1G3dOawCjEg==
+"@alwatr/resolve-url@^5.5.1":
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/@alwatr/resolve-url/-/resolve-url-5.5.1.tgz#cf12a8d067b6155375d67aaf4f10fd66c7024265"
+  integrity sha512-7fJcx9fJBnmjNbHpsswykHpxjb4mDscju7SVrcPFTh5gHSoVqE2hfopLL87JYZPS8uyXYdTbSJG+17UqAJPEwQ==
   dependencies:
-    "@alwatr/package-tracer" "^5.4.0"
+    "@alwatr/package-tracer" "^5.5.0"
+
+"@alwatr/unicode-digits@^5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@alwatr/unicode-digits/-/unicode-digits-5.5.0.tgz#9ca476ee7a79c6d0ea0f6221495e0916b36ab961"
+  integrity sha512-cUTqmv9Z3jfCtWWC0ODZYtCwXa/mcH4LXoowtCumGxqa/GjMsCROGx29wH9oWBma+44pKfc56q+WM00XpizTVw==
+  dependencies:
+    "@alwatr/package-tracer" "^5.5.0"
 
 "@babel/code-frame@^7.0.0":
   version "7.26.2"
