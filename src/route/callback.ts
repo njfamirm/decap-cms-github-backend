@@ -1,6 +1,6 @@
-import {AuthorizationCode} from 'simple-oauth2';
-import {config, logger} from '../config.js';
-import {apiServer} from '../lib/api-server.js';
+import { AuthorizationCode } from 'simple-oauth2';
+import { config, logger } from '../config.js';
+import { apiServer } from '../lib/api-server.js';
 
 apiServer.defineRoute({
   method: 'GET',
@@ -10,7 +10,7 @@ apiServer.defineRoute({
     const url = new URL(`https://${host}/${this.url}`);
     const provider = url.searchParams.get('provider');
     const code = url.searchParams.get('code');
-    logger.logMethodArgs?.('get-callback', {host, url, provider});
+    logger.logMethodArgs?.('get-callback', { host, url, provider });
 
     if (provider !== 'github') {
       return {
@@ -54,7 +54,7 @@ function renderBody(status: string, token?: string) {
     <script>
       const receiveMessage = (message) => {
         window.opener.postMessage(
-          'authorization:github:${status}:${JSON.stringify({token})}',
+          'authorization:github:${status}:${JSON.stringify({ token })}',
           message.origin
         );
 

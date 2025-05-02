@@ -5,7 +5,7 @@ const config = {
   hostname: '0.0.0.0',
   port: 8080,
   watch: true,
-  nodeResolve: {exportConditions: ['development']},
+  nodeResolve: { exportConditions: ['development'] },
   rootDir: '.',
   clearTerminalOnReload: false,
 };

@@ -1,4 +1,4 @@
-import {apiServer} from '../lib/api-server.js';
+import { apiServer } from '../lib/api-server.js';
 
 apiServer.defineRoute({
   method: 'GET',

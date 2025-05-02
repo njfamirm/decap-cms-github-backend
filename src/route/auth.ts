@@ -1,7 +1,7 @@
-import {AuthorizationCode} from 'simple-oauth2';
-import {randomBytes} from 'crypto';
-import {apiServer} from '../lib/api-server.js';
-import {config, logger} from '../config.js';
+import { AuthorizationCode } from 'simple-oauth2';
+import { randomBytes } from 'crypto';
+import { apiServer } from '../lib/api-server.js';
+import { config, logger } from '../config.js';
 
 export const randomString = () => randomBytes(4).toString('hex');
 
@@ -12,7 +12,7 @@ apiServer.defineRoute({
     const host = this.headers.host;
     const url = new URL(`https://${host}/${this.url}`);
     const provider = url.searchParams.get('provider');
-    logger.logMethodArgs?.('get-auth', {host, url, provider});
+    logger.logMethodArgs?.('get-auth', { host, url, provider });
 
     if (provider !== 'github') {
       return {

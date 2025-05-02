@@ -1,4 +1,4 @@
-import {createLogger} from '@alwatr/logger';
+import { createLogger } from '@alwatr/logger';
 
 const clientId = process.env.OAUTH_GITHUB_CLIENT_ID;
 const clientSecret = process.env.OAUTH_GITHUB_CLIENT_SECRET;
