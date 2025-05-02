@@ -6,22 +6,8 @@
   "author": "S. Amir Mohammad Najafi <njfamirm@gamil.com> (https://www.njfamirm.ir)",
   "type": "module",
   "scripts": {
-    "b": "yarn build",
-    "build": "yarn build:es --analyze=verbose",
-    "build:demo": "esbuild demo/admin.js --bundle --minify --outfile=demo/admin.min.js",
-    "build:es": "esbuild src/index.ts --platform=node --external:simple-oauth2 --target=node22 --bundle --format=esm --minify --sourcemap --outdir=dist --out-extension:.js=.mjs",
-    "build:ts": "tsc --build",
-    "clean": "rm -rf dist build .tsbuildinfo",
-    "release": "standard-version --sign",
-    "s": "yarn start",
-    "serve": "node --enable-source-maps dist/index.mjs",
-    "serve:debug": "node --inspect --enable-source-maps dist/index.mjs",
-    "start": "NODE_OPTIONS=--enable-source-maps run-s clean build serve",
-    "watch": "run-s clean build && run-p watch:es watch:node",
-    "watch:debug-node": "nodemon -w dist/ --inspect --enable-source-maps dist/index.mjs",
-    "watch:es": "yarn build:es --watch",
-    "watch:node": "nodemon -w dist/ --enable-source-maps dist/index.mjs",
-    "watch:ts": "yarn build:ts --watch --preserveWatchOutput"
+    "build": "esbuild demo/admin.js --bundle --minify --outfile=demo/admin.min.js",
+    "serve": "wds"
   },
   "dependencies": {
     "netlify-cms-app": "^2.15.72"
