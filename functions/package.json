@@ -1,0 +1,31 @@
+{
+  "name": "@njfamirm/decap-cms-github-backend-functions",
+  "version": "1.0.0",
+  "description": "Firebase Functions for Decap CMS GitHub backend",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "dependencies": {
+    "@alwatr/logger": "^5.5.3",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "simple-oauth2": "~5.1.0",
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "@types/simple-oauth2": "^5.0.7",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^5.8.3"
+  },
+  "private": true
+}
