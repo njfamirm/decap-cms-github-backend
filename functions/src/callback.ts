@@ -45,6 +45,7 @@ export const callback = functions.https.onRequest(async (request, response) => {
     const accessToken = await client.getToken(tokenParams);
     const token = accessToken.token['access_token'] as string;
 
+    console.log("accessToken %o", accessToken.token);
     response.send(renderBody('success', token));
     return;
   } 
@@ -55,19 +56,24 @@ export const callback = functions.https.onRequest(async (request, response) => {
 });
 
 function renderBody(status: string, token?: string) {
-  return `
-    <script>
-      const receiveMessage = (message) => {
-        window.opener.postMessage(
-          'authorization:github:${status}:${JSON.stringify({ token })}',
-          message.origin
-        );
 
-        window.removeEventListener("message", receiveMessage, false);
-      }
-      window.addEventListener("message", receiveMessage, false);
-
-      window.opener.postMessage("authorizing:github", "*");
-    </script>
-  `;
+    const content = {
+      token : token,
+      provider: "github",
+    }
+    
+  return `<!doctype html><html><body><script>
+  (function() {
+    function receiveMessage(e) {
+      console.log("receiveMessage %o", e)
+      window.opener.postMessage(
+        'authorization:github:${status}:${JSON.stringify(content)}',
+        e.origin
+      )
+    }
+    window.addEventListener("message", receiveMessage, false)
+    console.log("Sending message: %o", "github")
+    window.opener.postMessage("authorizing:github", "*")
+    })()
+  </script></body></html>`;
 }
