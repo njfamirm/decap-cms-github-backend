@@ -1,0 +1,21 @@
+name: decap-cms-github-backend
+id: 'ari:cloud:compass:40deb2f4-326f-4d9d-90ef-d4d1581ecfef:component/087d4bcd-9c66-4d6b-bee1-e36c9bc7b392/8aae9498-1fae-4fdc-8443-dbfab985dea3'
+slug: decap-cms-github-backend
+description: Decap CMS (formerly Netlify CMS) OAuth backend for Github
+configVersion: 1
+typeId: SERVICE
+ownerId: null
+fields:
+  tier: 4
+  isMonorepoProject: false
+links:
+  - name: null
+    type: REPOSITORY
+    url: 'https://github.com/Flames-Shield/decap-cms-github-backend'
+relationships: {}
+labels:
+  - 'source:github'
+customFields: null
+
+# Learn more about formatting compass.yml:
+# https://go.atlassian.com/compass-yml-format
