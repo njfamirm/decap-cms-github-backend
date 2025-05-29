@@ -1,10 +1,9 @@
 import { createLogger } from '@alwatr/logger';
-import * as functions from 'firebase-functions';
 
 // Get configuration from Firebase environment
-const clientId = process.env.OAUTH_GITHUB_CLIENT_ID || functions.config().github?.client_id;
-const clientSecret = process.env.OAUTH_GITHUB_CLIENT_SECRET || functions.config().github?.client_secret;
-const scope = process.env.OAUTH_GITHUB_SCOPE || functions.config().github?.scope || 'repo';
+const clientId = process.env.OAUTH_GITHUB_CLIENT_ID;
+const clientSecret = process.env.OAUTH_GITHUB_CLIENT_SECRET;
+const scope = process.env.OAUTH_GITHUB_SCOPE || 'repo'; // Keep the default for scope if not provided
 
 // Validate required configuration
 if (clientId == undefined) {

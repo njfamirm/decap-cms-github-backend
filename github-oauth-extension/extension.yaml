@@ -1,0 +1,151 @@
+name: github-oauth-helper-decap-cms
+version: 0.1.0
+specVersion: v1beta # Firebase Extensions spec version
+displayName: GitHub OAuth Helper for Decap CMS
+description: Provides HTTPS-triggered functions to handle GitHub OAuth 2.0 flow, typically for services like Decap CMS (formerly Netlify CMS).
+author:
+  authorName: Your Name # You might want to change this later
+  url: https://your-website.com # You might want to change this later
+license: MIT # Or Apache-2.0, choose one
+releaseNotes: Initial release of the GitHub OAuth Helper extension.
+
+apis:
+  - apiName: cloudfunctions.googleapis.com
+    reason: Powers the OAuth helper functions.
+
+roles:
+  - role: cloudfunctions.invoker
+    reason: Allows the OAuth functions to be invoked via HTTPS requests.
+
+resources:
+  - name: auth
+    type: firebaseextensions.v1beta.function
+    description: >-
+      Handles the initiation of the GitHub OAuth flow, redirecting the user
+      to GitHub for authorization.
+    properties:
+      eventTrigger:
+        eventType: google.cloud.functions.v2.httpsTrigger
+        triggerRegion: us-central1 # Or choose a region appropriate for you
+      runtime: nodejs20 # Match your project's Node.js version
+      entryPoint: auth # Matches the exported function name in src/index.ts
+      httpsTrigger: {}
+  - name: callback
+    type: firebaseextensions.v1beta.function
+    description: >-
+      Handles the callback from GitHub after user authorization, exchanges
+      the code for an access token, and returns it to the client.
+    properties:
+      eventTrigger:
+        eventType: google.cloud.functions.v2.httpsTrigger
+        triggerRegion: us-central1 # Or choose a region appropriate for you
+      runtime: nodejs20 # Match your project's Node.js version
+      entryPoint: callback # Matches the exported function name in src/index.ts
+      httpsTrigger: {}
+  - name: lifecycletaskoninstall
+    type: firebaseextensions.v1beta.function
+    description: Placeholder function for onInstall lifecycle event.
+    properties:
+      eventTrigger:
+        eventType: google.cloud.pubsub.topic.v1.messagePublished # Standard Pub/Sub trigger
+        triggerRegion: ${LOCATION} # Use the selected region
+        # The event topic will be automatically created by Firebase Extensions
+      runtime: nodejs20 # Match other functions
+      entryPoint: lifecycletaskoninstall
+  - name: lifecycletaskonupdate
+    type: firebaseextensions.v1beta.function
+    description: Placeholder function for onUpdate lifecycle event.
+    properties:
+      eventTrigger:
+        eventType: google.cloud.pubsub.topic.v1.messagePublished
+        triggerRegion: ${LOCATION}
+      runtime: nodejs20
+      entryPoint: lifecycletaskonupdate
+  - name: lifecycletaskonconfigure
+    type: firebaseextensions.v1beta.function
+    description: Placeholder function for onConfigure lifecycle event.
+    properties:
+      eventTrigger:
+        eventType: google.cloud.pubsub.topic.v1.messagePublished
+        triggerRegion: ${LOCATION}
+      runtime: nodejs20
+      entryPoint: lifecycletaskonconfigure
+
+params:
+  - param: OAUTH_GITHUB_CLIENT_ID
+    label: GitHub OAuth Client ID
+    description: Your GitHub OAuth Application's Client ID.
+    type: string
+    required: true
+    validationRegex: ^[a-zA-Z0-9_]+$
+    validationErrorMessage: Must be a valid GitHub Client ID.
+  - param: OAUTH_GITHUB_CLIENT_SECRET
+    label: GitHub OAuth Client Secret
+    description: Your GitHub OAuth Application's Client Secret.
+    type: secret
+    required: true
+  - param: OAUTH_GITHUB_SCOPE
+    label: GitHub OAuth Scopes
+    description: The OAuth scopes to request from GitHub (e.g., 'repo', 'user').
+    type: string
+    default: repo
+    required: false
+    validationRegex: ^[a-zA-Z0-9_,\s]+$
+    validationErrorMessage: Must be a comma-separated list of valid GitHub scopes.
+  - param: LOCATION
+    label: Cloud Functions region
+    description: >-
+      Which region do you want to deploy the functions created for this extension?
+      For help selecting a region, refer to the [region selection
+      guide](https://firebase.google.com/docs/functions/locations).
+    type: select
+    required: true
+    options:
+      - label: Iowa (us-central1)
+        value: us-central1
+      - label: South Carolina (us-east1)
+        value: us-east1
+      - label: Northern Virginia (us-east4)
+        value: us-east4
+      - label: Los Angeles (us-west2)
+        value: us-west2
+      - label: Salt Lake City (us-west3)
+        value: us-west3
+      - label: Las Vegas (us-west4)
+        value: us-west4
+      - label: Warsaw (europe-central2)
+        value: europe-central2
+      - label: Belgium (europe-west1)
+        value: europe-west1
+      - label: London (europe-west2)
+        value: europe-west2
+      - label: Frankfurt (europe-west3)
+        value: europe-west3
+      - label: Zurich (europe-west6)
+        value: europe-west6
+      - label: Hong Kong (asia-east2)
+        value: asia-east2
+      - label: Tokyo (asia-northeast1)
+        value: asia-northeast1
+      - label: Seoul (asia-northeast2)
+        value: asia-northeast2
+      - label: Singapore (asia-southeast1)
+        value: asia-southeast1
+      - label: Jakarta (asia-southeast2)
+        value: asia-southeast2
+      - label: Sydney (australia-southeast1)
+        value: australia-southeast1
+      - label: São Paulo (southamerica-east1)
+        value: southamerica-east1
+    default: us-central1
+
+# Billing-related properties (optional but recommended)
+billingRequired: true
+
+lifecycleEvents:
+  onInstall:
+    functionResourceName: lifecycletaskoninstall # References the resource name above
+  onUpdate:
+    functionResourceName: lifecycletaskonupdate
+  onConfigure:
+    functionResourceName: lifecycletaskonconfigure
