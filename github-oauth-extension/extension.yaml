@@ -1,12 +1,12 @@
 name: github-oauth-helper-decap-cms
 version: 0.1.0
+license: apache-2.0
 specVersion: v1beta # Firebase Extensions spec version
 displayName: GitHub OAuth Helper for Decap CMS
 description: Provides HTTPS-triggered functions to handle GitHub OAuth 2.0 flow, typically for services like Decap CMS (formerly Netlify CMS).
 author:
-  authorName: Your Name # You might want to change this later
-  url: https://your-website.com # You might want to change this later
-license: MIT # Or Apache-2.0, choose one
+  authorName: Daniel Llewellyn
+  email: danieln.llewellyn@gmail.com
 releaseNotes: Initial release of the GitHub OAuth Helper extension.
 
 apis:
