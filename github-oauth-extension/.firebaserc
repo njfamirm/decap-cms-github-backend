@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "staging": "flame-27501"
+  },
+  "targets": {},
+  "etags": {
+    "flame-27501": {
+      "extensionInstances": {
+        "auth-send-message-to-slack": "69aab702b395b6d396ce4e49fe1169248ace458c2095a4b0fc0bd7714c52ebec",
+        "firestore-stripe-payments": "c2b856a2bb30cae3290757fa6a599ff3658bd924afcebfc4f86b93f635fef0e7",
+        "mailersend-email": "1fe3c3797cbdec3d4fcf0c5f0db954b949898d1bcef9d858a41893802cc955dd",
+        "notification-centre": "58c3d49a724442618503f1573e2da37f12406ce5398500770411b95cdeaa0aad"
+      }
+    }
+  }
+}
