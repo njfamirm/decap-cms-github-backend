@@ -10,12 +10,12 @@
     "@alwatr/flatomise" "^5.5.3"
     "@alwatr/package-tracer" "^5.5.3"
 
-"@alwatr/crypto@^4.9.1":
-  version "4.9.1"
-  resolved "https://registry.yarnpkg.com/@alwatr/crypto/-/crypto-4.9.1.tgz#7c313ec41b0a3b64868af7cd51a3884708bc876b"
-  integrity sha512-LCWyBolRG0N+1UUOEVUCObt4ABZPDbGOC2EpbwMcxb69uzh9B5HnftoyItGY8xXmypTZ+ZEes0cCmom54i4o8g==
+"@alwatr/crypto@^4.9.3":
+  version "4.9.3"
+  resolved "https://registry.yarnpkg.com/@alwatr/crypto/-/crypto-4.9.3.tgz#40a54cdb6a5059f118b127ead4b4f82036e300dc"
+  integrity sha512-5dfUm26IOKw6cdO7xl7hNMp3Fgl3sIJqsDTw4Gh8XJ4SCWtAo4Unghlui8hpcKoiBLQ7Xfu73012b6d1mTIgQA==
   dependencies:
-    "@alwatr/nanolib" "^5.5.0"
+    "@alwatr/nanolib" "^5.6.5"
 
 "@alwatr/dedupe@^5.5.3":
   version "5.5.3"
@@ -126,7 +126,7 @@
     "@alwatr/package-tracer" "^5.5.3"
     "@alwatr/platform-info" "^5.5.3"
 
-"@alwatr/nanolib@^5.5.0":
+"@alwatr/nanolib@^5.6.5":
   version "5.6.5"
   resolved "https://registry.yarnpkg.com/@alwatr/nanolib/-/nanolib-5.6.5.tgz#77597ddc9873a5b8045eebec8ee947a145605108"
   integrity sha512-Gq4o5a927haaVjzmDYhk+ONCxB5UyNZ3Palh4XxdQ6X2hqMofLIQaA3tPSqlTIIJPKhVNvdRnmixs9Y8ev4tXQ==
@@ -155,22 +155,22 @@
     "@alwatr/resolve-url" "^5.5.5"
     "@alwatr/unicode-digits" "^5.5.3"
 
-"@alwatr/nanotron-api-server@^4.9.1":
-  version "4.9.1"
-  resolved "https://registry.yarnpkg.com/@alwatr/nanotron-api-server/-/nanotron-api-server-4.9.1.tgz#59c6e1d643d00ad0be94bbdb2eb5b2df4940ee64"
-  integrity sha512-yt+c1gZovGhEAwI6d3GWSKTZBdlbFG6erq9f0iNCtC3R1fofziT/U1+traf0l1s3Zta9fOyHkA5ZXhNboWzaNg==
+"@alwatr/nanotron-api-server@^4.9.3":
+  version "4.9.3"
+  resolved "https://registry.yarnpkg.com/@alwatr/nanotron-api-server/-/nanotron-api-server-4.9.3.tgz#d463e6d3e2152127519fc687da0b776ac6a86710"
+  integrity sha512-s3P1HISquHaQAK12b5740eKO3vVwY+ZWAACvLMRTvPX/idPkNVHwxmiSd7QKuvMlVd9mFkKR7nyCH+6wRq8vhw==
   dependencies:
-    "@alwatr/nanolib" "^5.5.0"
+    "@alwatr/nanolib" "^5.6.5"
 
-"@alwatr/nanotron@^4.9.1":
-  version "4.9.1"
-  resolved "https://registry.yarnpkg.com/@alwatr/nanotron/-/nanotron-4.9.1.tgz#c92a28b3791f1d5c8bc5effa399763287e9ca7c3"
-  integrity sha512-Wf8Ty52Sj9pFky71ROPawSGOQMDBlFEX8MD/j0GL/uRFPgzBR+D9idFXU+GZw1xqGpQDAEoxI7GhGHUkJ1NcAQ==
+"@alwatr/nanotron@^4.9.3":
+  version "4.9.3"
+  resolved "https://registry.yarnpkg.com/@alwatr/nanotron/-/nanotron-4.9.3.tgz#0891f2a70af2f024b0e5e32b660f8a8ce0539d03"
+  integrity sha512-DMNJjc8EnPHM3BMbujjullBGrmGNzg5CsZl0wgAWevDMUvyPGQRHvfpQk8Tq3YNG4/rLIGJ0tp/XdoPFsBmMXw==
   dependencies:
-    "@alwatr/crypto" "^4.9.1"
-    "@alwatr/nanolib" "^5.5.0"
-    "@alwatr/nanotron-api-server" "^4.9.1"
-    "@alwatr/pre-handlers" "^4.9.1"
+    "@alwatr/crypto" "^4.9.3"
+    "@alwatr/nanolib" "^5.6.5"
+    "@alwatr/nanotron-api-server" "^4.9.3"
+    "@alwatr/pre-handlers" "^4.9.3"
 
 "@alwatr/node-fs@^5.5.3":
   version "5.5.3"
@@ -209,13 +209,13 @@
   dependencies:
     "@alwatr/package-tracer" "^5.5.3"
 
-"@alwatr/pre-handlers@^4.9.1":
-  version "4.9.1"
-  resolved "https://registry.yarnpkg.com/@alwatr/pre-handlers/-/pre-handlers-4.9.1.tgz#9235ab7a077ebd95fa74a24f695943957857a387"
-  integrity sha512-JStZBS/6uC/LgLKsdpvFThTc/VaPom+zQjLRRigWjrqta8ysyqHuJaLyfb9gbJo9dxMd4So3ZAoV0cVAK30xkg==
+"@alwatr/pre-handlers@^4.9.3":
+  version "4.9.3"
+  resolved "https://registry.yarnpkg.com/@alwatr/pre-handlers/-/pre-handlers-4.9.3.tgz#f704cc2e0baee426bd25c217d21062adaca286b6"
+  integrity sha512-cxD03rg/RmA3EwtXKqTN7tQ2AUvKGcQ7q3ngaUcG6jn5V7DB8ev/6NqpxDo+CZFEIjVAIiTmGnWwMQVDx4Brvg==
   dependencies:
-    "@alwatr/nanolib" "^5.5.0"
-    "@alwatr/nanotron-api-server" "^4.9.1"
+    "@alwatr/nanolib" "^5.6.5"
+    "@alwatr/nanotron-api-server" "^4.9.3"
 
 "@alwatr/random@^5.1.2":
   version "5.1.2"
