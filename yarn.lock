@@ -118,13 +118,13 @@
   dependencies:
     "@alwatr/package-tracer" "^5.5.3"
 
-"@alwatr/logger@^5.5.3":
-  version "5.5.3"
-  resolved "https://registry.yarnpkg.com/@alwatr/logger/-/logger-5.5.3.tgz#41d018e344c8623823d1b79d759eeab4aeeaa03a"
-  integrity sha512-4ghrTgo0xNXQ3nyXz89ERzGwadfXcn5iqQ6U30HQQiPcfqFuQc+pLclkAPK2+LUZMzYXQ/1GlaBYwiU0G3gqqw==
+"@alwatr/logger@^5.5.3", "@alwatr/logger@^5.5.6":
+  version "5.5.6"
+  resolved "https://registry.yarnpkg.com/@alwatr/logger/-/logger-5.5.6.tgz#62553147bce0d2c48fde22980e39e0383947ce49"
+  integrity sha512-gauJhmnhNR+NNOjyDFijjxWf3xauJRKtd/j7qZib+mzKqWD+ZC+oAquq0Cq5hqqFdTb9XUY43z0lv3JhoqL0VQ==
   dependencies:
-    "@alwatr/package-tracer" "^5.5.3"
-    "@alwatr/platform-info" "^5.5.3"
+    "@alwatr/package-tracer" "5.5.6"
+    "@alwatr/platform-info" "5.5.6"
 
 "@alwatr/nanolib@^5.6.5":
   version "5.6.5"
@@ -182,10 +182,10 @@
     "@alwatr/logger" "^5.5.3"
     "@alwatr/package-tracer" "^5.5.3"
 
-"@alwatr/package-tracer@^5.5.3":
-  version "5.5.3"
-  resolved "https://registry.yarnpkg.com/@alwatr/package-tracer/-/package-tracer-5.5.3.tgz#4d10d7a4e2f80f1d234832248f44d5b3f11d572b"
-  integrity sha512-pbjw3V5ZVxoHwzDkc/2Iog0PHo/yhLArwN7CoxPcloonNx/k0y5jzFpVMcDbLRwU5q+vxNz7iLm2ta7ZvZG0PA==
+"@alwatr/package-tracer@5.5.6", "@alwatr/package-tracer@^5.5.3":
+  version "5.5.6"
+  resolved "https://registry.yarnpkg.com/@alwatr/package-tracer/-/package-tracer-5.5.6.tgz#0858b823c86d81348d1df65afc37831969e1b6cd"
+  integrity sha512-1zs7gCJjh1bv9VcJkfRDyDmmIgidgQZ5hkHqN4ATSVSRnQtC6HdUggTD9zvszl+Qcqje4hcM97KZqksyQJvRfQ==
 
 "@alwatr/parse-duration@^5.5.4":
   version "5.5.4"
@@ -195,12 +195,12 @@
     "@alwatr/is-number" "^5.7.0"
     "@alwatr/package-tracer" "^5.5.3"
 
-"@alwatr/platform-info@^5.5.3":
-  version "5.5.3"
-  resolved "https://registry.yarnpkg.com/@alwatr/platform-info/-/platform-info-5.5.3.tgz#bd3c92ea0d9ca2209a3800e71a63681c1704ec86"
-  integrity sha512-I1N+WNH1gWtiWxWxUJHqIuZr4M/jkTVVP1F8aI8XWQQvqBSQc7NXYdVhPs9me/1rfxw65NUYd7GGeNfoKXde8A==
+"@alwatr/platform-info@5.5.6", "@alwatr/platform-info@^5.5.3":
+  version "5.5.6"
+  resolved "https://registry.yarnpkg.com/@alwatr/platform-info/-/platform-info-5.5.6.tgz#c230d94dd3dafb944ad66c24da2acef3e7de013a"
+  integrity sha512-ox8iEhtQsc+TlCMg6F/seA7WjFzsIoRpq81FMUH/37GJdbG9PEcLc6fzjCeLR+eyEHNCQ4SCVVbffL4YAKJmZw==
   dependencies:
-    "@alwatr/package-tracer" "^5.5.3"
+    "@alwatr/package-tracer" "5.5.6"
 
 "@alwatr/polyfill-has-own@^5.5.3":
   version "5.5.3"
