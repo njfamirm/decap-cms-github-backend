@@ -83,12 +83,10 @@
   dependencies:
     "@alwatr/package-tracer" "^5.5.3"
 
-"@alwatr/global-this@^5.5.3":
-  version "5.5.3"
-  resolved "https://registry.yarnpkg.com/@alwatr/global-this/-/global-this-5.5.3.tgz#9dba83f994d4af210cb60769b8ac0d11de4c3069"
-  integrity sha512-GtIbhsB/CDFkrtpYArbf31j/rLoarcWmJwR8kBkoDaaQeT1h18+wSwwq5yBAqU5nkRqmJyHaqCASz2JWVAFJ2Q==
-  dependencies:
-    "@alwatr/package-tracer" "^5.5.3"
+"@alwatr/global-this@5.6.8", "@alwatr/global-this@^5.5.3":
+  version "5.6.8"
+  resolved "https://registry.yarnpkg.com/@alwatr/global-this/-/global-this-5.6.8.tgz#3067870d52848a40a2bbdd94a948d05c4c514a64"
+  integrity sha512-sUNm0GJE4jNn1NurBNHifXF16hGpMBBRkW7lQwXAR3ZrXqpg0c9CiNb7piGo4kJQSG7D1KJf9LjUK1UJr9WwiA==
 
 "@alwatr/hash-string@^5.2.1":
   version "5.2.1"
@@ -125,6 +123,14 @@
   dependencies:
     "@alwatr/package-tracer" "^5.5.3"
     "@alwatr/platform-info" "^5.5.3"
+
+"@alwatr/logger@^6.0.16":
+  version "6.0.16"
+  resolved "https://registry.yarnpkg.com/@alwatr/logger/-/logger-6.0.16.tgz#120cc7009afc32e3a8ab3d09bd656852b788536c"
+  integrity sha512-eitWHWCUu+z3pWNGTBS7F/fAAbklGTu72XTqb0Ksr3rhpHlPhQxQQwyZKMEZSO/hwJvgt9Vu4TIgCsfY3F0tjg==
+  dependencies:
+    "@alwatr/global-this" "5.6.8"
+    "@alwatr/platform-info" "5.5.27"
 
 "@alwatr/nanolib@^5.6.5":
   version "5.6.5"
@@ -195,12 +201,10 @@
     "@alwatr/is-number" "^5.7.0"
     "@alwatr/package-tracer" "^5.5.3"
 
-"@alwatr/platform-info@^5.5.3":
-  version "5.5.3"
-  resolved "https://registry.yarnpkg.com/@alwatr/platform-info/-/platform-info-5.5.3.tgz#bd3c92ea0d9ca2209a3800e71a63681c1704ec86"
-  integrity sha512-I1N+WNH1gWtiWxWxUJHqIuZr4M/jkTVVP1F8aI8XWQQvqBSQc7NXYdVhPs9me/1rfxw65NUYd7GGeNfoKXde8A==
-  dependencies:
-    "@alwatr/package-tracer" "^5.5.3"
+"@alwatr/platform-info@5.5.27", "@alwatr/platform-info@^5.5.3":
+  version "5.5.27"
+  resolved "https://registry.yarnpkg.com/@alwatr/platform-info/-/platform-info-5.5.27.tgz#b7113bbffd67e1d7b0866e0de5a356652c22ceb1"
+  integrity sha512-1pMoHUckgj4cGVJbfYsIO4q0HThunANMEBCQVWb7frZlHtc0bzoo/yrFrVxalSNImjjJWambrvnhIPcBEsPugw==
 
 "@alwatr/polyfill-has-own@^5.5.3":
   version "5.5.3"
